@@ -1,0 +1,345 @@
+la nómina electrónica es un proceso desarrollado que ha mostrado que cumple su objetivo.
+los procesos así de efectivos son replicables, y se convierten en recetas estándares.
+Todo un objeto que puede adquirir diferentes matices, de acuerdo a lo que los
+desarrolladores quieran hacer de él.
+
+partes del proceso: sub procesos:
+
+proceso de habilitación -> software de la empresa
+proceso de implementación ¿transmisión?
+proceso de transmisión -> facture
+
+son procesos similares a los de la facturación electronica.
+
+es parte del conjunto de técnicas de transformación digital, que quiere decir
+crear plataformas virtuales de servicios públicos, hacer de éstos aplicaciones móviles.
+Y transladar sedes físicas y soportes físicos de documentación a servidores.
+
+Los procesos fiscales y la documentación pública es más susceptible de ser la primera
+en implementar todas estas tecnologías.
+Todas las empresas e individuos interesados en implementar estos procesos pueden hacerlo.
+
+
+Eventualmente será algo deseable para todos los empleadores.
+Incluso un requisito obligatorio para poder emplear.
+BUSCAR:
+DOCUMENTO: PROYECTO DE RESOLUCIÓN -> implementa y desarrolla el sistema de facturación
+pago de nómina electrónica anexo técnico mmarquezo@dian.gov.co
+
+
+para qué sirve? -> para hacer un seguimiento de los pagos a los empleados,
+y para llevar un registro con la dian para que acepte esos pagos como descuentos tributarios en declaración de renta e iva
+
+ASUNTOS LOGISTICOS:
+
+modalidades de pago posible para una empresa:
+
+-cada 21 días
+-cada semana
+-cada 10 días
+-cada 15 días
+-cada inicio de mes
+-cada fin de mes
+-cada mitad de mes
+
+la periodicidad de los pagos es definida por el cliente
+¿qué factores influyen en esa periodicidad?
+  -el flujo de caja
+  -políticas internas [necesidad de los empleados o de los empleadores]
+  -otros
+
+
+ASUNTOS TÉCNICOS:
+
+  la dian solicita que cada pago individual a cada empleado sea escrito en XML
+  cada comprobante de pago individual debe estar en XML
+  entregarlos durante los primeros 10 días del mes
+
+  qué contiene la nómina electrónica?
+  los datos del empleador y del empleado
+  los pagos devengados y las deducciones
+
+  estar sincronizado con la planificación triutaria, seguir el calendario de la dian
+
+  entre más empleados tenga la empresa, mas pronto deberá comenzar esta implementación
+
+  +200 empleados 30 de abril 2021
+  11- 250 -31 de mayo
+  4 - 10 30 de junio
+  3 empleados 31 de julio
+
+  entidades del estado 30 de junio de 2021
+
+  todas tienen fecha máxima de implementación
+  todas coinciden en la misma fecha de habilitación
+
+PARA QUÉ IMPLEMENTAR ESTO?
+
+para tomar decisiones más rápidamente y en cualquier lugar
+para reducir el tiempo que tarda buscar datos en los archivos
+
+   -acceso a reportes históricos
+   -sobre la contratación de los clientes
+   -sobre el comportamiento "rotativo" de la empresa
+   -obtener el costo - beneficio que representa cada empleado
+   -saber cuándo es necesario contratar más talento o despedir
+   -analizar si el pago que obtienen los empleados es justo
+   -comprender porqué los empleados se van o se quedan
+
+es un proceso que se enmarca dentro de la contabilidad electrónica semi automatizada.
+
+
+la dian impone las directrices para establecer la masificcion del proceso de nómina
+
+se resume, se comprate el resultado del rpoceso de liquidación de nómina y se
+notificara a cada empleado.
+
+decreto 1625 de 2016 artículo 1.6.1.4.27
+  impone medidas para digitalizar los procesos de facturación electrónica en compra venta de bienes y servicios
+  pago a empleados y pagos fiscales.
+esttuto tributario artículo 616.6
+resolución 00042 de mayo 2020
+resolución 000013 de febrero de 2021
+
+¿quienes están obligados? -> los que hagan pagos dentro de una relación laboral
+costos y gastos que sean deducibles dentro de este ambito
+
+
+Requisitos del documento soporte de pago de nómina electrónica:
+  título "Documento soporte de pago de nómina electrónica"
+
+  apellidos, nombre, razón social, NIT del sujeto del contriuyente obligado
+
+  apellidos nombres, numero de identificacion del beneficiario del pago
+
+  codigo único de dobumento soporte de pago de nómina electrónica CUNE
+  identificador del documento
+
+  llevar sistema interno de numeración consecutivo
+
+  contenido y valores de los conceptos que correspondan al valor devengado de
+  nómina: salario, horas extra, bonificaciones cualquier cosa que se considere pago o remuneración
+
+  contenido y valores que correspondan al valor deducido de nómina:
+  descuento de salud del 4%, descuento de pensión, fondo de solidaridad, retención en la fuente,
+  días no trabajados,
+
+  el valor total de la diferencia entre el valor devengado y el valor deducido.
+  Valor neto pagado.
+
+  medio de pago utilizado al momento de hacer la entrega de la contraprestación económica
+
+  fecha y hora de generación
+
+  firma digitalizar
+
+  apellidos, nombres o razon social y NIT del fabricante del software y proveedor de soluciones tecnológicas
+  (puede ser un departamento de tecnología interno o un contrato externo)
+
+
+
+PERIODICIDAD:
+  el documento se solicita por la dian mensualmente, tiene un plazo de entregarse los 10 primeros días del mes siguiente
+  el documento de mayo se entrega del 1 al 10 de junio y así sucesivamente
+
+  si la empresa hace pagos diferidos en el transcurso del mes, deberá sumar las quincenas o
+  semanas, o días pagados hasta el momento y emitir un consolidado de esos pagos
+  sumar las 2 quincenas, o las 4 semanas, o los días que completen un mes y emitir el total. Por cada empleado
+
+  en periodos de pago de nomina diferentes al mensual (semanal, quicenal, etc), se deberá acumular.
+
+
+  QUE SON LAS NOTAS DE AJSUTE? -> documentos que están provistos para hacer saber errores y omiciones
+  que deban hacerse en el documento emitido, para reemplazar o eliminar datos.
+  cualquier error aritmético o de contenido que el sujeto obligado debe corregir.
+  pueden haber múltiples correcciones, y muchas notas de ajuste emitidas, pero el sistema toma la última nota efectuada.
+  cuando se presentan estos errores es obligatorio emitir un documento nuevo que contengan todos los ajustes que se hallan solicitado en las notas.
+  Se ingresa el CUNE de la nota de ajsute y el CUNE del identificador del documento ORIGINAL sobre el que se hacen los ajustes.
+
+  definir el software
+
+  realizar pruebas para mostrar que el software cumple con los Requisitos y se puede implementar con el software de la DIAN
+
+  pasar a producción después de ser aprovado
+
+  cada empleado está ligado a un documento soporte, cada conjunto de ajustes indicados por las notas se convierte en un segundo documento de soporte
+  cada soporte original tiene un CUNE, cada soporte ajustado tiene un CUNE también
+
+  If documento rechazado por la DIAN: verificar requisitos y corregir
+
+  elif documento validado por la DIAN:
+      generar firmas
+      almacenar el (los) archivo(s) como readonly
+      Emitir mensaje de validación al beneficiario de pago
+      correo de notificación directamente al empleado, reenviando las respuestas emitidas por la DIAN
+
+
+CONTINGENCIAS, ERRORES, INCONVENIENTES, IMPREVISTOS EN EL ENVÍO:
+hacen que el sistema no se pueda cumplir
+
+inconvenientes presentados por la DIAN: caída del sistema, error de lectura, inhabilitación
+
+inconvenientes presentados por el sujeto obligado: fallas técnicas, problemas con la plataforma
+
+se cuentan con 48 horas para resolver esas contingencias.
+
+Recomendable hacer las entregas de originales 2 días antes del día 10.
+para poder hacer correcciones y evitar contingencias. plan de mitigación de contingencia.
+
+que tipos de firmas digitales se manejan
+que tipos de contrato existen fijo, indefinido, por obra labor, practica o pasantía, contrato de aprendizaje
+qué ingresos son salariales y no salariales. Regla del 60 - 40, ver anexo técnico de la DIAN
+no se reportan valores negativos al documento soporte, se presentan ingresos + deducciones = pago neto al empleado
+
+(los prestadores de servicio no aplican a este documento) -> causa del trabajo informal
+
+-------------------------------------------------------------
+
+
+la visión del proceso desde la DIAN, y los otros actores.
+
+estrategia de novasoft -> informar sobre la facturación electrónica
+
+facture(2010) -> plataforma autorizada por la DIAN en 2017 como proveedor autorizado
+para la transmision de documentos de factura electrónica (etapa I) y nómina electrónica (etapa II)
+
+facture es el software responsable de la TRANSMISIÓN.
+
+    TEMAS DE INTERES Facture:
+
+          https://www.youtube.com/watch?v=Q1d5sJw8ZD8 - un esquema de flujo es expuesto en el minuto 27
+          la arquitectura se expone en el minuto 1:10:00
+
+          empresa dedicada a la colaboración electrónica, con certificacion de la dian para la
+          transmisión de documentos electrónicos. La dian tiene 12.000 clientes con el proceso concurrente.
+
+          -> practicamente cualquiera que haga nómina debe mantener sistemas de nómina electrónicos.
+
+          -> la emisión transmisión del documento electrónico es en formato XML y es uno por cada empleado
+
+          -> la transmisión a la dian se hace entre los primeros 10 días del mes siguiente.
+
+          -> posterior a la emisión inicial se abre un espacio para emitir novedades, como ingresar datos que no se tenían en la primera emisión
+
+          -> las notas de ajuste son documentos para eliminar o modificar datos erroneos.
+
+          -> los datos que se acumulan serán la suma de todos los pagos realizados hasta ese periodo.
+
+          -> no existen documentos eliminados, sólo con la etiqueta [eliminado]
+
+          -> no existen documentos actualizados, cada modificación va en un nuevo documento con un nuevo id = CUNE que esté enlazado al CUNE del documento original
+
+          -> hay multas por el 5% de sumas que no se hayan suministrado, 4% de sumas con info errónea, 3% de sumas entregadas fuera del tiempo
+
+          -> novasoft entrega genera el documento al proveedor tecnológico, que debe completarlo (incluir CUNE, sumas, entre otros datos) y entregarselo a la DIAN
+
+          -> se pueden entregar paquetes de documetos por NIT, cada comprobante tiene un id, para controlar el paquete por el que se envió ese documento a la DIAN
+
+          -> las horas extra se pueden mostrar por fecha de inicio y fin de horas extra por día y el porcentaje
+
+          -> otra forma es mostrar el total de horas extras diurnas y nocturas por mes, con los porcentajes de pago por cada hora y otros valores
+
+          -> esto aplica para cualquier costo y gasto de operaciones de instituciones públicas o privadas, con o sin animo de lucro
+
+          -> el sentido de esto es que se sepa cuánto se está ahorrando o no una empresa para determinar cómo ayudarla en casos de perdida o incentivarla a que pague impuestos o reinvierta en el desarrollo
+
+          -> un objetivo es aumentar el nivel de fiscalización de personas naturales y darle más herramientas a los trabajadores para dignificar su labor
+
+          -> eso permite saber qué personas ganan más de un salario en múltiples partes, para obligarlos a declarar
+
+  Novasoft:
+    genera comprobantes, los numera y genera codigos de la dian
+
+
+
+
+    RIESGOS-CONTINGENCIAS:
+
+
+
+    SUPERACIÓN DE DIFICULTADES:
+
+
+
+
+la facturación electrónica es una forma de leer y reportar las personas a las que les facturan pero que no facturan
+es una forma de llevar a la formalidad a las empresas, para que los trabajadores tengan pagos dignos,
+para crear una fuente más certera para hacer evaluaciones y tomar deciciones objetivas.
+
+la tecnificación permite un mayor control y un mayor control permite evitar causar cosas indeseables con y en el sistema.
+
+
+Códgio abierto para hacer nómina electrónica:
+
+ODoo - versión paga y versión Comunitaria
+
+
+qué tablas necesita corvus para ser como odoo?
+odoo, versión original https://www.odoo.com/
+odoo, versión nomina colombia https://odoo.nom.co/ (ofrece ejemplos y documentación para descargar)
+
+
+tener una tabla de información de empleados:
+    nombre
+    identificación
+    pasaporte
+    nacionalidad
+    numero de cuenta bancaria
+
+    fecha de nacimiento
+    lugar de nacimiento
+    país de nacimiento
+
+    residencia
+    teléfono
+    contacto de emergencia
+    teléfono de emergencia
+    correo electrónico empresarial
+
+    permiso de trabajo
+    numero de permiso de trabajo
+    fecha del permiso
+
+
+    sexo
+    estado civil
+    hijos
+    personas dependientes
+
+    formación profesional
+    departamento
+    cargo
+    horas laborales / semana
+
+tener una tabla con los contratos:
+    identificación -referencia del contrato
+    nombre del empleado
+    departamento
+    cargo
+    categoría el empleado
+
+
+  términos del contrato:
+    fecha de inicio
+    fecha finalización - si es a termino fijo
+    horas laborales / semana
+    periodicidad de pago
+  diario de salarios:
+    ruta al documento de liquidación de la nómina del empleado
+
+tabla con información de los salarios:
+  nombre del empleado
+  departamento
+  cargo
+  categoría del empleado
+
+  salario mensual
+  EPS
+  ARL
+  caja de compensación
+  fondo de pensiones
+  fondo de cesantías
+  clase de riesgo
+  rodamiento
+  comisiones
+  bonos
